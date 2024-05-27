@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(85, 0, 255);
+}
+
+.texto-menu{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+}
+
+#desktoppage{
+    height: 100vh;
+}
+
+#menu{
+    background-color: #fff;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+#menu-sub{
+    width: 1208px;
+    height: 64px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-left{
+    width: 730px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-right{
+    width: 393px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#number{
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#button-donate{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #fff;
+    background-color: #FF3D9A;
+    width: 181px;
+    height: 64px;
+    border: none;
+    border-radius: 34px;
+    padding: 16px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
