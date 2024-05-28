@@ -1,14 +1,13 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
-    padding: 0px;
-    margin: 0px;
-    background-color: rgb(85, 0, 255);
+body {
+    padding: 0;
+    margin: 0;
 }
 
-.texto-menu{
+.texto-menu {
     font-family: Inter;
     font-size: 20px;
     font-weight: 700;
@@ -16,56 +15,51 @@ body{
     text-align: left;
 }
 
-#desktoppage{
+#desktoppage {
     height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* #menu{
-    background-color: #fff;
-    width: 100vw;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    border: 5px solid ;
-} */
-
-#menu-sub{
-    /* width: 1208px; */
-    width: 100vw;
-    /* height: 64px; */
+#menu-sub {
+    width: 100%;
     height: 120px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     background-color: #fff;
+    padding: 0px 7rem;
+    border: 3px solid;
 }
 
-#menu-left{
-    width: 730px;
+#menu-left {
+    width: 45.6rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-#menu-right{
-    width: 393px;
+#menu-right {
+    width: 24rem;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
 }
 
-#number{
-    width: 180px;
+#number {
+    width: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-right: 1rem; /* Espaço entre o número e o botão */
 }
 
-#button-donate{
+#button-donate {
     font-family: Poppins;
     font-size: 20px;
     font-weight: 700;
@@ -80,6 +74,49 @@ body{
     padding: 16px 32px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     cursor: pointer;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    #menu-sub {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        border: none; /* Remover a borda em dispositivos móveis */
+    }
+
+    #menu-left, #menu-right {
+        width: 100%;
+        max-width: 320px;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    #menu-right {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #number, #button-donate {
+        width: auto;
+        justify-content: center;
+        margin: 0.5rem;
+    }
+
+    #button-donate {
+        width: auto; /* Ajustar a largura conforme necessário */
+    }
+}
+
+@media (max-width: 480px) {
+    .texto-menu {
+        font-size: 18px;
+    }
+
+    #button-donate {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
 }
