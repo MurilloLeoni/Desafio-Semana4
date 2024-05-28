@@ -1,90 +1,10 @@
-* {
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-}
-
-.texto-menu {
-    font-family: Inter;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-}
-
-#desktoppage {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#menu-sub {
-    width: 100%;
-    height: 120px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #fff;
-    padding: 0px 7rem;
-    border: 3px solid;
-}
-
-#menu-left {
-    width: 45.6rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#menu-right {
-    width: 24rem;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#number {
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem; /* Espaço entre o número e o botão */
-}
-
-#button-donate {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 32px;
-    text-align: left;
-    color: #fff;
-    background-color: #FF3D9A;
-    width: 181px;
-    height: 64px;
-    border: none;
-    border-radius: 34px;
-    padding: 16px 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
+/*Responsividade-Fazer dps
+ @media (max-width: 768px) {
     #menu-sub {
         flex-direction: column;
         height: auto;
         padding: 1rem;
-        border: none; /* Remover a borda em dispositivos móveis */
+        border: none; 
     }
 
     #menu-left, #menu-right {
@@ -106,7 +26,7 @@ body {
     }
 
     #button-donate {
-        width: auto; /* Ajustar a largura conforme necessário */
+        width: auto;
     }
 }
 
@@ -119,4 +39,142 @@ body {
         font-size: 18px;
         padding: 10px 20px;
     }
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.texto-menu {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+}
+
+#menu {
+    width: 100%;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 7rem;
+}
+
+#menu-left {
+    width: 45.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-right {
+    width: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#number{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7px;
+}
+
+.button-donate {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #fff;
+    background-color: #FF3D9A;
+    width: 181px;
+    height: 64px;
+    border: none;
+    border-radius: 34px;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#divider {
+    width: 1200px;
+    height: 2px;
+    border-top: 1px solid #000000;
+    margin: 0 auto;
+}
+
+#main-content{
+    width: 100%;
+    height: 100%;
+    margin-top: 100px;
+    padding: 80px 0px 120px 0px;
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#info-block{
+    width: 584px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#info-block h1{
+    font-family: Poppins;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    letter-spacing: -0.02em;
+    color: #1E1F27;
+}
+
+#info-block p{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38.4px;
+    color: #37383F;
+}
+
+#info-block h3{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51.2px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#botoes{
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+
+#button-adopt{
+    height: 64px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
