@@ -18,21 +18,29 @@ body{
 
 #desktoppage{
     height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
 }
 
-#menu{
+/* #menu{
     background-color: #fff;
+    width: 100vw;
     height: 120px;
     display: flex;
     align-items: center;
-}
+    border: 5px solid ;
+} */
 
 #menu-sub{
-    width: 1208px;
-    height: 64px;
+    /* width: 1208px; */
+    width: 100vw;
+    /* height: 64px; */
+    height: 120px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fff;
 }
 
 #menu-left{
