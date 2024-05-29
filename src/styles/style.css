@@ -305,3 +305,68 @@ body {
     line-height: 32px;
     opacity: 80%;
 }
+
+#adopt-block{
+    padding: 80px 0px 120px;
+}
+
+#main-adopt{
+    width: 1208px;
+    height: 100%;
+    gap: 40px;
+    margin: 0 auto;
+    display: flex;
+}
+
+#text-adopt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#text-adopt button{
+    width: 221px;
+    height: 64px;
+    padding: 16px 32px;
+    gap: 8px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 32px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+#adopt-block h2{
+    font-family: Poppins;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+#text-adopt span{
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51.2px;
+    letter-spacing: -0.02em;
+}
+
+#text-adopt ul{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38.4px;
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+#text-adopt li{
+    margin-bottom: 15px;
+}
