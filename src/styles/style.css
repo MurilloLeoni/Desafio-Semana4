@@ -306,11 +306,11 @@ body {
     opacity: 80%;
 }
 
-#adopt-block{
+#adopt-info-block{
     padding: 80px 0px 120px;
 }
 
-#main-adopt{
+#main-adopt-info{
     width: 1208px;
     height: 100%;
     gap: 40px;
@@ -318,13 +318,13 @@ body {
     display: flex;
 }
 
-#text-adopt{
+#text-adopt-info{
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#text-adopt button{
+#text-adopt-info button{
     width: 221px;
     height: 64px;
     padding: 16px 32px;
@@ -340,7 +340,7 @@ body {
     cursor: pointer;
 }
 
-#adopt-block h2{
+#adopt-info-block h2{
     font-family: Poppins;
     font-size: 56px;
     font-weight: 700;
@@ -349,7 +349,7 @@ body {
     text-align: center;
 }
 
-#text-adopt span{
+#text-adopt-info span{
     font-family: Poppins;
     font-size: 32px;
     font-weight: 700;
@@ -357,7 +357,7 @@ body {
     letter-spacing: -0.02em;
 }
 
-#text-adopt ul{
+#text-adopt-info ul{
     font-family: Inter;
     font-size: 24px;
     font-weight: 500;
@@ -367,7 +367,7 @@ body {
     margin-left: 0;
 }
 
-#text-adopt li{
+#text-adopt-info li{
     margin-bottom: 15px;
 }
 
@@ -478,4 +478,89 @@ body {
     height: 100px;
     margin: 17px 60px;
     object-fit: contain;
+}
+
+#adopt-block{
+    background-color: #1E1F27;
+    height: 525px;
+    padding: 80px 0px 120px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+#text-adopt-block h2{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+#text-adopt-block span{
+    color: #F8DB46;
+}
+
+#text-adopt-block h3{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 51.2px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+#buttons-adopt-block{
+    gap: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#button-left{
+    background-color: #F8DB46;
+    width: 240px;
+    height: 64px;
+    padding: 16px 32px;
+    gap: 8px;
+    border-radius: 32px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+#button-right{
+    color: #fff;
+    background-color: #1E1F27;
+    width: 240px;
+    height: 64px;
+    padding: 16px 32px;
+    gap: 8px;
+    border: 2px solid #fff;
+    border-radius: 32px;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+#img-left{
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    margin-top: 45px;
+    margin-left: 66px;
+}
+
+#img-right{
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    margin-top: 45px;
+    margin-right: 66px;
 }
