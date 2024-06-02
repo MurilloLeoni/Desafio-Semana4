@@ -617,13 +617,13 @@ body {
     opacity: 80%;
 }
 
-#form{
+#form-subscribe{
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-#form input{
+#form-subscribe input{
     width: 395px;
     height: 64px;
     padding: 16px 136px 16px 24px;
@@ -633,7 +633,7 @@ body {
     background-color: #5758F1;
 }
 
-#form input::placeholder {
+#form-subscribe input::placeholder {
     color: #fff;
     font-family: Poppins;
     font-size: 20px;
@@ -794,4 +794,140 @@ body {
 
 #final-text-footer span{
     color: #ff3d9a;
+}
+
+#modal-donate{
+    margin: 0 auto;
+    background-color: #04C27F;
+    width: 480px;
+    height: 716px;
+    top: -4255px;
+    left: 3120px;
+    padding: 32px;
+    gap: 20px;
+    border-radius: 32px;
+}
+
+#modal-donate h1{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+#form-donate{
+    width: 416px;
+    height: 488px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#form-donate input{
+    padding: 16px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid #937AFF;
+}
+
+#payment-method{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#payment-pix{
+    width: 133.33px;
+    height: 56px;
+    padding: 16px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#payment-paypal{
+    width: 133.33px;
+    height: 56px;
+    padding: 16px;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #3F96FC;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#payment-credit{
+    width: 133.33px;
+    height: 80px;
+    border: 1px solid #3F96FC;
+    padding: 16px;
+    gap: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#payment-method p{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.payment-option.selected {
+    color: #fff;
+    background-color: #3F96FC;
+}
+
+.buttons-donate{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 38px;
+}
+
+#button-heart{
+    background-color: #ff3d9a;
+    color: #fff;
+    width: 249px;
+    height: 64px;
+    padding: 16px 32px;
+    gap: 8px;
+    border: none;
+    border-radius: 32px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-cancel{
+    background-color: #37383F;
+    color: #fff;
+    width: 177px;
+    height: 64px;
+    padding: 16px 32px;
+    gap: 8px;
+    border: none;
+    border-radius: 32px;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.buttons-donate p{
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    cursor: pointer;
 }

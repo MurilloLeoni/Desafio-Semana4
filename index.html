@@ -20,6 +20,57 @@
     />
   </head>
   <body>
+    <!-- <dialog id="dialog"> -->
+    <div id="modal-donate">
+      <h1>Choose your Donate</h1>
+      <div id="form-donate">
+        <label for="email"
+          ><span style="color: #ff3d9a">EMAIL</span
+          ><span style="color: #3f96fc">*</span></label
+        >
+        <input type="text" placeholder="Enter your email" />
+        <div class="error" id="email-error"></div>
+
+        <label for="valor"
+          ><span style="color: #ff3d9a">HOW MUCH CAN YOU HELP?</span
+          ><span style="color: #3f96fc">*</span></label
+        >
+        <input type="text" id="valor" placeholder="0,00" required />
+        <div class="error" id="donate-error"></div>
+
+        <label for="payment"
+          ><span style="color: #ff3d9a">PAYMENT METHOD</span
+          ><span style="color: #3f96fc">*</span></label
+        >
+        <div id="payment-method">
+        <div class="payment-option" id="payment-pix">
+          <p>Pix</p>
+          <input type="radio" name="payment-method" value="pix"/>
+        </div>
+        <div class="payment-option" id="payment-credit">
+          <p>Credit <br>Card</p>
+          <input type="radio" name="payment-method" value="credit"/>
+        </div>
+        <div class="payment-option" id="payment-paypal">
+          <p>Paypal</p>
+          <input type="radio" name="payment-method" value="paypal"/>
+        </div>
+      </div>
+        <div class="error" id="payment-error"></div>
+        <div class="buttons-donate">
+        <button id="button-heart">
+          <img src="src/images/Icon-coracao.png" alt="Icone coracao" /><p>I wanna
+          Help!</p>
+        </button>
+        <button id="button-cancel">
+          <img src="src/images/Icon-voltar.png" alt="Icone de voltar" /><p>Cancel</p>
+        </button>
+      </div>
+      </div>
+      <button id="fechar-modal">Fechar</button>
+    </div>
+    <!-- </dialog> -->
+
     <div id="menu">
       <div class="texto-menu" id="menu-left">
         <img src="src/images/Logotype.png" alt="logotipo-header" />
@@ -279,7 +330,7 @@
           of animals finding their forever homes.
         </p>
       </div>
-      <div id="form">
+      <div id="form-subscribe">
         <input type="text" placeholder="Enter your email" />
         <button id="button-subscribe">Subscribe</button>
       </div>
@@ -360,8 +411,11 @@
           </div>
         </div>
       </div>
-      <hr/>
-      <p id="final-text-footer">​We are not just a rescue,<span> we are a refuge</span></p>
+      <hr />
+      <p id="final-text-footer">
+        ​We are not just a rescue,<span> we are a refuge</span>
+      </p>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
