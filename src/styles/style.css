@@ -641,7 +641,7 @@ body {
     opacity: 50%;
 }
 
-#form button{
+#form-subscribe button{
     width: 170px;
     height: 64px;
     padding: 16px 32px;
@@ -796,18 +796,23 @@ body {
     color: #ff3d9a;
 }
 
-#modal-donate{
-    margin: 0 auto;
-    width: 480px;
+#dialog-donate{
+    width: 448px;
     height: 716px;
-    top: -4255px;
-    left: 3120px;
-    padding: 32px;
-    gap: 20px;
+    border: none;
     border-radius: 32px;
 }
 
+#modal-donate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
 #modal-donate h1{
+    margin: 0;
     font-family: Poppins;
     font-size: 48px;
     font-weight: 700;
@@ -880,7 +885,7 @@ body {
     text-align: left;
 }
 
-.payment-option.selected {
+.payment-option input:checked {
     color: #fff;
     background-color: #3F96FC;
 }
@@ -888,8 +893,10 @@ body {
 .buttons-donate{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    gap: 38px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 15px;
 }
 
 #button-heart{
@@ -931,15 +938,19 @@ body {
     cursor: pointer;
 }
 
-#modal-adopt{
+#dialog-adopt{
     width: 448px;
     height: 686px;
-    top: -4255px;
-    left: 2606px;
-    padding: 32px;
-    gap: 48px;
+    padding: 30px;
+    border: none;
     border-radius: 32px;
-    margin: 0 auto;
+}
+
+#modal-adopt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #modal-adopt h1{

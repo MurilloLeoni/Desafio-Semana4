@@ -4,111 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rescue Center</title>
-    <link rel="stylesheet" href="src/styles/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"/>
+    <link rel="stylesheet" href="src/styles/style.css"/>
+    <link rel="stylesheet" href="src/styles/fonts.css"/>
   </head>
   <body>
-    <!-- <dialog id="dialog-adopt">-->
-      <div id="modal-adopt">
-        <h1>Apply to Adopt</h1>
-        <p>Small text description can goes here</p>
-        <div id="form-adopt">
-          <label for="email"><span style="color: #ff3d9a">EMAIL</span><span style = "color:#3f96fc">*<span></label>
-        <input type="text" placeholder="Enter your email" />
-        <div class="error" id="email-error"></div>
-
-        <label for="name"><span style="color: #ff3d9a">FULL NAME</span><span style="color: #3f96fc">*</span></label
-          >
-          <input type="text" placeholder="Enter your full name" />
-          <div class="error" id="name-error"></div>
-
-          <label for="date"><span style="color: #ff3d9a">DATE OF BIRTH</span><span style="color: #3f96fc">*</span></label
-            >
-            <input type="date" placeholder="" />
-            <div class="error" id="date-error"></div>
-
-            <div class="termo-modal">
-              <input type="checkbox" id="termo" name="termo" required>
-              <label for="termo">I agree with <span style="color: #ff3d9a;">Privacy Policy</span> and <span style="color: #ff3d9a;">Terms and Conditions</span></label>
-          </div>
-          <button class="button-words-modal-adopt" id="button-adopt-modal"><img src="src/images/Icon-dog-modal.png" alt="Icone cachorro">I wanna Adopt!</button>
-          <button class="button-words-modal-adopt" id="button-cancel-modal-adopt"><img src="src/images/Icon-voltar.png" alt="Icone voltar modal">Cancel</button>
-        </div>
-      </div>
-    <!-- </dialog> -->
-
-    <!-- <dialog id="dialog-donation"> -->
-    <div id="modal-donate">
-      <h1>Choose your Donate</h1>
-      <div id="form-donate">
-        <label for="email"
-          ><span style="color: #ff3d9a">EMAIL</span
-          ><span style="color: #3f96fc">*</span></label
-        >
-        <input type="text" placeholder="Enter your email" />
-        <div class="error" id="email-error"></div>
-
-        <label for="valor"
-          ><span style="color: #ff3d9a">HOW MUCH CAN YOU HELP?</span
-          ><span style="color: #3f96fc">*</span></label
-        >
-        <input type="text" id="valor" placeholder="0,00" required />
-        <div class="error" id="donate-error"></div>
-
-        <label for="payment"
-          ><span style="color: #ff3d9a">PAYMENT METHOD</span
-          ><span style="color: #3f96fc">*</span></label
-        >
-        <div id="payment-method">
-        <div class="payment-option" id="payment-pix">
-          <p>Pix</p>
-          <input type="radio" name="payment-method" value="pix"/>
-        </div>
-        <div class="payment-option" id="payment-credit">
-          <p>Credit <br>Card</p>
-          <input type="radio" name="payment-method" value="credit"/>
-        </div>
-        <div class="payment-option" id="payment-paypal">
-          <p>Paypal</p>
-          <input type="radio" name="payment-method" value="paypal"/>
-        </div>
-      </div>
-        <div class="error" id="payment-error"></div>
-        <div class="buttons-donate">
-        <button id="button-heart">
-          <img src="src/images/Icon-coracao.png" alt="Icone coracao" /><p>I wanna
-          Help!</p>
-        </button>
-        <button id="button-cancel">
-          <img src="src/images/Icon-voltar.png" alt="Icone de voltar" /><p>Cancel</p>
-        </button>
-      </div>
-      </div>
-      <button id="fechar-modal">Fechar</button>
-    </div>
-    <!-- </dialog> -->
-
-    <div id="menu">
-      <div class="texto-menu" id="menu-left">
+    <section id="menu">
+      <nav class="texto-menu" id="menu-left">
         <img src="src/images/Logotype.png" alt="logotipo-header" />
         <p>Rescue center</p>
         <p>Apply to adopt</p>
         <p>Volunteer</p>
         <p>Ways to give</p>
         <p>Events</p>
-      </div>
-      <div id="menu-right">
+      </nav>
+      <nav id="menu-right">
         <div class="texto-menu" id="number">
           <img src="src/images/Icon-telefone.png" alt="ícone-telefone" />
           <span>631-249-7325</span>
@@ -117,10 +26,10 @@
           <img src="src/images/Icon-coracao.png" alt="ícone-coracao-doacao" />
           <span>Donate</span>
         </button>
-      </div>
-    </div>
+      </nav>
+    </section>
     <hr id="divider" />
-    <div id="main-screen">
+    <section id="main-screen">
       <div id="info-block">
         <h1>Forever Homes Shelter</h1>
         <p>
@@ -134,7 +43,7 @@
             <img src="src/images/Icon-coracao.png" alt="ícone-coracao-doacao" />
             <span>Donate</span>
           </button>
-          <button id="button-adopt">
+          <button class="button-apply-adopt" id="button-adopt">
             <img
               src="src/images/Icon-dog.png"
               alt="ícone-cachorro-preto-branco"
@@ -149,8 +58,8 @@
         src="src/images/Image-cat-dog.png"
         alt="imagem-cachorro-gato-main-screen"
       />
-    </div>
-    <div id="stats-block">
+    </section>
+    <section id="stats-block">
       <div id="text-information">
         <h2>
           With your help, we <br />
@@ -172,8 +81,8 @@
         </div>
       </div>
       <div class="carrossel"></div>
-    </div>
-    <div id="donations-block">
+    </section>
+    <section id="donations-block">
       <div id="main-donations-block">
         <h2>With your donations we provide</h2>
         <div id="line">
@@ -258,8 +167,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="adopt-info-block">
+    </section>
+    <section id="adopt-info-block">
       <h2>Adoption information</h2>
       <div id="main-adopt-info">
         <img
@@ -283,11 +192,11 @@
             </li>
             <li>Be ready to adopt within 7-10 days</li>
           </ul>
-          <button>Apply to Adopt</button>
+          <button class="button-apply-adopt">Apply to Adopt</button>
         </div>
       </div>
-    </div>
-    <div id="difference-block">
+    </section>
+    <section id="difference-block">
       <div id="main-difference">
         <div id="title-difference">
           <img
@@ -304,7 +213,9 @@
           <div class="cards-difference">
             <span>Adopt or Foster</span>
             <p>Provide a forver or temporary home to a homeless animal.</p>
-            <button id="button1-difference">View Adoptables</button>
+            <a href="adoptables-page.html"
+              ><button id="button1-difference">View Adoptables</button></a
+            >
           </div>
           <div class="cards-difference">
             <span>Volunteer</span>
@@ -328,8 +239,8 @@
           </div>
         </div>
       </div>
-    </div>
-    <div id="adopt-block">
+    </section>
+    <section id="adopt-block">
       <img
         id="img-left"
         src="src/images/Img-cat-adopt.png"
@@ -339,8 +250,12 @@
         <h2>Find your <span> best friend </span> today!</h2>
         <h3>Browse our adorable adoptables</h3>
         <div id="buttons-adopt-block">
-          <button id="button-left">View Adoptables</button>
-          <button id="button-right">Apply to Adopt</button>
+          <a href="adoptables-page.html"
+            ><button id="button-left">View Adoptables</button></a
+          >
+          <button class="button-apply-adopt" id="button-right">
+            Apply to Adopt
+          </button>
         </div>
       </div>
       <img
@@ -348,8 +263,8 @@
         src="src/images/Img_dog_adopt.png"
         alt="Imagem direita adopt_block"
       />
-    </div>
-    <div id="subscription">
+    </section>
+    <section id="subscription">
       <div id="header">
         <h2>Subscribe to our newsletter</h2>
         <p>
@@ -362,7 +277,7 @@
         <input type="text" placeholder="Enter your email" />
         <button id="button-subscribe">Subscribe</button>
       </div>
-    </div>
+    </section>
     <footer class="footer-main">
       <div class="footer-links">
         <div id="logo-footer">
@@ -444,6 +359,108 @@
         ​We are not just a rescue,<span> we are a refuge</span>
       </p>
     </footer>
-    <script src="main.js"></script>
+
+    <dialog id="dialog-donate">
+      <div id="modal-donate">
+        <h1>Choose your Donate</h1>
+        <div id="form-donate">
+          <label for="email"
+            ><span style="color: #ff3d9a">EMAIL</span
+            ><span style="color: #3f96fc">*</span></label
+          >
+          <input type="email" placeholder="Enter your email" />
+          <div class="error" id="email-error"></div>
+
+          <label for="valor"
+            ><span style="color: #ff3d9a">HOW MUCH CAN YOU HELP?</span
+            ><span style="color: #3f96fc">*</span></label
+          >
+          <input type="text" id="valor" placeholder="R$0,00" required />
+          <div class="error" id="donate-error"></div>
+
+          <label for="payment"
+            ><span style="color: #ff3d9a">PAYMENT METHOD</span
+            ><span style="color: #3f96fc">*</span></label
+          >
+          <div id="payment-method">
+            <div class="payment-option" id="payment-pix">
+              <p>Pix</p>
+              <input type="radio" name="payment-method" value="pix" />
+            </div>
+            <div class="payment-option" id="payment-credit">
+              <p>Credit <br />Card</p>
+              <input type="radio" name="payment-method" value="credit" />
+            </div>
+            <div class="payment-option" id="payment-paypal">
+              <p>Paypal</p>
+              <input type="radio" name="payment-method" value="paypal" />
+            </div>
+          </div>
+          <div class="error" id="payment-error"></div>
+          <div class="buttons-donate">
+            <button id="button-heart">
+              <img src="src/images/Icon-coracao.png" alt="Icone coracao" />
+              <p>I wanna Help!</p>
+            </button>
+            <button id="button-cancel">
+              <img src="src/images/Icon-voltar.png" alt="Icone de voltar" />
+              <p>Cancel</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog id="dialog-adopt">
+      <div id="modal-adopt">
+        <h1>Apply to Adopt</h1>
+        <p>Small text description can goes here</p>
+        <div id="form-adopt">
+          <label for="email"
+            ><span style="color: #ff3d9a">EMAIL</span
+            ><span style="color: #3f96fc">*</span></label
+          >
+          <input type="email" placeholder="Enter your email" />
+          <div class="error" id="email-error"></div>
+
+          <label for="name"
+            ><span style="color: #ff3d9a">FULL NAME</span
+            ><span style="color: #3f96fc">*</span></label
+          >
+          <input type="text" placeholder="Enter your full name" />
+          <div class="error" id="name-error"></div>
+
+          <label for="date"
+            ><span style="color: #ff3d9a">DATE OF BIRTH</span
+            ><span style="color: #3f96fc">*</span></label
+          >
+          <input type="date" placeholder="" />
+          <div class="error" id="date-error"></div>
+
+          <div class="termo-modal">
+            <input type="checkbox" id="termo" name="termo" required />
+            <label for="termo"
+              >I agree with
+              <span style="color: #ff3d9a">Privacy Policy</span> and
+              <span style="color: #ff3d9a">Terms and Conditions</span></label
+            >
+          </div>
+          <button class="button-words-modal-adopt" id="button-adopt-modal">
+            <img src="src/images/Icon-dog-modal.png" alt="Icone cachorro" />I
+            wanna Adopt!
+          </button>
+          <button
+            class="button-words-modal-adopt"
+            id="button-cancel-modal-adopt"
+          >
+            <img
+              src="src/images/Icon-voltar.png"
+              alt="Icone voltar modal"
+            />Cancel
+          </button>
+        </div>
+      </div>
+    </dialog>
+    <script src="src/javascript/main.js"></script>
   </body>
 </html>
