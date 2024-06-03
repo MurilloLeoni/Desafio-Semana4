@@ -20,7 +20,36 @@
     />
   </head>
   <body>
-    <!-- <dialog id="dialog"> -->
+    <!-- <dialog id="dialog-adopt">-->
+      <div id="modal-adopt">
+        <h1>Apply to Adopt</h1>
+        <p>Small text description can goes here</p>
+        <div id="form-adopt">
+          <label for="email"><span style="color: #ff3d9a">EMAIL</span><span style = "color:#3f96fc">*<span></label>
+        <input type="text" placeholder="Enter your email" />
+        <div class="error" id="email-error"></div>
+
+        <label for="name"><span style="color: #ff3d9a">FULL NAME</span><span style="color: #3f96fc">*</span></label
+          >
+          <input type="text" placeholder="Enter your full name" />
+          <div class="error" id="name-error"></div>
+
+          <label for="date"><span style="color: #ff3d9a">DATE OF BIRTH</span><span style="color: #3f96fc">*</span></label
+            >
+            <input type="date" placeholder="" />
+            <div class="error" id="date-error"></div>
+
+            <div class="termo-modal">
+              <input type="checkbox" id="termo" name="termo" required>
+              <label for="termo">I agree with <span style="color: #ff3d9a;">Privacy Policy</span> and <span style="color: #ff3d9a;">Terms and Conditions</span></label>
+          </div>
+          <button class="button-words-modal-adopt" id="button-adopt-modal"><img src="src/images/Icon-dog-modal.png" alt="Icone cachorro">I wanna Adopt!</button>
+          <button class="button-words-modal-adopt" id="button-cancel-modal-adopt"><img src="src/images/Icon-voltar.png" alt="Icone voltar modal">Cancel</button>
+        </div>
+      </div>
+    <!-- </dialog> -->
+
+    <!-- <dialog id="dialog-donation"> -->
     <div id="modal-donate">
       <h1>Choose your Donate</h1>
       <div id="form-donate">

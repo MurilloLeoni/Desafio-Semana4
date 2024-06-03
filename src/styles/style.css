@@ -798,7 +798,6 @@ body {
 
 #modal-donate{
     margin: 0 auto;
-    background-color: #04C27F;
     width: 480px;
     height: 716px;
     top: -4255px;
@@ -928,6 +927,85 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 32px;
+    text-align: left;
+    cursor: pointer;
+}
+
+#modal-adopt{
+    width: 448px;
+    height: 686px;
+    top: -4255px;
+    left: 2606px;
+    padding: 32px;
+    gap: 48px;
+    border-radius: 32px;
+    margin: 0 auto;
+}
+
+#modal-adopt h1{
+    margin: 0;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+#modal-adopt p{
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+#form-adopt{
+    width: 384px;
+    height: 488px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+#form-adopt input{
+    margin-top: -10px;
+    padding: 16px;
+    gap: 12px;
+    border-radius: 8px;
+    border: 1px solid #937AFF;
+}
+
+#button-adopt-modal{
+    padding: 16px 24px;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #04C27F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#button-cancel-modal-adopt{
+    background-color: #37383F;
+    padding: 16px 24px;
+    gap: 8px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-words-modal-adopt{
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.02em;
     text-align: left;
     cursor: pointer;
 }
