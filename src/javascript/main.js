@@ -1,3 +1,4 @@
+//Abrir e fechar modal
 const buttonsDonate = document.querySelectorAll(".button-donate");
 const buttonsApply = document.querySelectorAll(".button-apply-adopt");
 const modalDonate = document.getElementById("dialog-donate");
@@ -25,31 +26,91 @@ buttonCloseAdopt.onclick = function () {
   modalAdopt.close();
 };
 
-document.addEventListener("DOMContentLoaded", (event) => {
-  const valorInput = document.getElementById("valor");
+function verificaEmail(email) {
+  const aux = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  return aux.test(email);
+}
 
-  function formatCurrency(value) {
-    value = value.replace(/\D/g, "");
-    value = (value / 100).toFixed(2) + "";
-    value = value.replace(".", ",");
-    value = value.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
-    return value;
+// Validação modal donate
+const emailErrorDonate = document.getElementById("email-error-donate");
+const valorError = document.getElementById("donate-error");
+const submitDonate = document.getElementById("button-heart");
+const paymentOption = document.getElementsByName("payment-method");
+const paymentError = document.getElementById("payment-error");
+
+submitDonate.addEventListener("click", function () {
+  const email = document.getElementById("email-donate").value;
+  if (verificaEmail(email)) {
+    emailErrorDonate.innerHTML = "";
+  } else {
+    emailErrorDonate.innerHTML = "*Selecione um email válido";
+    return;
   }
-  valorInput.addEventListener("input", function () {
-    this.value = formatCurrency(this.value);
-  });
-  valorInput.value = formatCurrency(valorInput.value);
+
+  const valorInput = document.getElementById("valor").value;
+  if (valorInput === "" || isNaN(valorInput)) {
+    valorError.innerHTML = "*Selecione um número válido (Ex: 7.9)";
+    return false;
+  } else {
+    valorError.innerHTML = "";
+  }
+
+  let pagamentoSelecionado = false;
+  for (let i = 0; i < paymentOption.length; i++) {
+    if (paymentOption[i].checked) {
+      pagamentoSelecionado = true;
+      break;
+    }
+  }
+
+  if (!pagamentoSelecionado) {
+    paymentError.innerHTML = "*Selecione um método de pagamento";
+    return;
+  }
+  paymentError.innerHTML = "";
+
+  window.location.href = "success-page.html";
 });
 
- document.addEventListener("DOMContentLoaded", (event) => {
-   const paymentOptions = document.querySelectorAll(".payment-option");
-   paymentOptions.forEach((option) => {
-     const radioInput = option.querySelector('input[type="radio"]');
-     radioInput.addEventListener("change", () => {
-       paymentOptions.forEach((opt) => opt.classList.remove("selected"));
-       if (radioInput.checked) {
-         option.classList.add("selected");
-       }
-     });
-   });
- });
+
+// Validação modal adopt
+function validaNome(name) {
+  const aux = /^[a-zA-ZÀ-ÿ']{2,}(?: [a-zA-ZÀ-ÿ']{2,})+$/;
+  return aux.test(name);
+}
+
+const submitAdopt = document.getElementById("button-adopt-modal");
+const emailErrorAdopt = document.getElementById("email-error-adopt");
+const nameError = document.getElementById("name-error");
+const termoError = document.getElementById("term-error");
+
+submitAdopt.addEventListener("click", function () {
+  const email = document.getElementById("email-adopt").value;
+  if (verificaEmail(email)) {
+    emailErrorAdopt.innerHTML = "";
+  } else {
+    emailErrorAdopt.innerHTML = "*Selecione um email válido";
+    return;
+  }
+
+  const nome = document.getElementById("fullname-adopt").value;
+  if (nome === "") {
+    nameError.innerHTML = "*Por favor, insira seu nome completo";
+    return;
+  } else if (!validaNome(nome)) {
+    nameError.innerHTML = "*Por favor, insira um nome completo válido";
+    return;
+  } else {
+    nameError.innerHTML = "";
+  }
+
+  const termoAceito = document.getElementById("termo").checked;
+  if (!termoAceito) {
+    termoError.innerHTML = "*Por favor, aceite os termos";
+    return;
+  } else {
+    termoError.innerHTML = "";
+  }
+
+  window.location.href = "success-page.html";
+});

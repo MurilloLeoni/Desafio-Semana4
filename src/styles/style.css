@@ -1,4 +1,4 @@
-/*Responsividade-Fazer dps
+/*Responsividade-Fazer dps se possível
  @media (max-width: 768px) {
     #menu-sub {
         flex-direction: column;
@@ -828,17 +828,32 @@ body {
     display: flex;
     flex-direction: column;
 }
-#form-donate input{
+
+#form-donate input {
     padding: 16px;
     gap: 10px;
     border-radius: 8px;
+    border: 1px solid #3F96FC;
+    outline: none;
+  }
+  
+  #form-donate input:focus {
     border: 1px solid #937AFF;
-}
+  }
 
 #payment-method{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#payment-method label{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: left;
 }
 
 #payment-pix{
@@ -875,14 +890,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-}
-#payment-method p{
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.02em;
-    text-align: left;
 }
 
 .payment-option input:checked {
@@ -985,6 +992,11 @@ body {
     padding: 16px;
     gap: 12px;
     border-radius: 8px;
+    border: 1px solid #3F96FC;
+    outline: none;
+}
+
+#form-adopt input:focus{
     border: 1px solid #937AFF;
 }
 
